@@ -41,6 +41,7 @@
 </details>
 
 ### 2.118. Pascal's Triangle(https://leetcode.com/problems/pascals-triangle/)
+<details><summary>
 
 #### Most Optimal
 </summary>
