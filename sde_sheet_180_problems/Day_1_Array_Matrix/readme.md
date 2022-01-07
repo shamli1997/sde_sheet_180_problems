@@ -1,10 +1,7 @@
 # Day 1:Array and Matrix Problems
 
 ### 1.73. Set Matrix Zeroes (https://leetcode.com/problems/set-matrix-zeroes/)
-<details><summary>
-
-#### Brute Force
-</summary>
+<details><summary>Brute Force</summary>
 
 ##### TC: (N x M) x (N + M) (Traversel of the Array) x (Traversal of the row and col)
 ##### SC: O(1)
@@ -13,10 +10,7 @@
 ###### 2. Wherever there is -1 fill that up with 0
 </details>
 
-<details><summary>
-
-#### Optimized
-</summary>
+<details><summary>Optimized</summary>
 
 ##### TC: 2 x O(N x M) (Linear Traversel of the Array Twice)
 ##### SC: O(1)
@@ -24,10 +18,7 @@
 ###### 2. Linearly traverse through array and set 0 in the 2 arrays.
 ###### 3. For every given index check index in col,row array and if any of it 0 make 0 in the matrix.
 </details>
-<details><summary>
-
-#### Most Optimal
-</summary>
+<details><summary>Most Optimal</summary>
 
 ##### TC: O(N x M + N x M) (Linear Traversel of the Array Twice)
 ##### SC: O(N) + O(M) (Two dummy row and col arrays)
@@ -41,10 +32,7 @@
 </details>
 
 ### 2.118. Pascal's Triangle(https://leetcode.com/problems/pascals-triangle/)
-<details><summary>
-
-#### Most Optimal
-</summary>
+<details><summary>Most Optimal</summary>
 
 ##### TC: O(N) 
 ##### SC: O(1)
