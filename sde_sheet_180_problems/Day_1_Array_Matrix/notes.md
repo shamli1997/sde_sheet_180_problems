@@ -1,6 +1,7 @@
 # Day 1:Array and Matrix Problems
 
-### 1.73. Set Matrix Zeroes (https://leetcode.com/problems/set-matrix-zeroes/)
+### [1.73. Set Matrix Zeroes](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_1_Array_Matrix/1.73_set_matrix_zeros.py)
+###### Leetcode Link: https://leetcode.com/problems/set-matrix-zeroes/
 <details><summary>Brute Force</summary>
 
 ##### TC: (N x M) x (N + M) (Traversel of the Array) x (Traversal of the row and col)
@@ -20,6 +21,7 @@
 </details>
 <details><summary>Most Optimal</summary>
 
+
 ##### TC: O(N x M + N x M) (Linear Traversel of the Array Twice)
 ##### SC: O(N) + O(M) (Two dummy row and col arrays)
  1. Take the dummy row,col in the matrix itself mat[0,0]
@@ -31,8 +33,10 @@
  7. Why did we traverse from back? It would have updated our dummy array as well if we would have started from front.
 </details>
 
-### 2.118. Pascal's Triangle(https://leetcode.com/problems/pascals-triangle/)
+### [2.118. Pascal's Triangle](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_1_Array_Matrix/2.118_pascal_triangle.py)
+###### Leetcode Link: https://leetcode.com/problems/pascals-triangle/
 <details><summary>Most Optimal</summary>
+
 
 ##### TC: O(N) 
 ##### SC: O(1)
@@ -41,8 +45,10 @@
 
 </details>
 
-### 3.31. Next Permutation (https://leetcode.com/problems/next-permutation/)
+### [3.31. Next Permutation](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_1_Array_Matrix/3.31_next_permutation.py)
+###### Leetcode Link: https://leetcode.com/problems/next-permutation/
 <details><summary>Brute Force</summary>
+
 
 ##### TC: (N! x N) N represents the number of elements present in the input array. Also for searching input arrays from all possible permutations will take N!. 
 ##### SC: O(1)
