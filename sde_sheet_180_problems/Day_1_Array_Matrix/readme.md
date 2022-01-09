@@ -70,3 +70,36 @@
  4. Reverse array from index+1 where the index is found at step 1 till the end of the array.
 
 </details>
+
+### [4.53. Maximum Subarray](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_1_Array_Matrix/4.53_maximum_subarray.py)
+###### Leetcode Link: https://leetcode.com/problems/maximum-subarray/
+<details><summary>Brute Force</summary>
+
+
+##### TC: (N^3)
+##### SC: O(1)
+
+1. Using three for loops, we will get all possible subarrays in two loops and their sum in another loop, and then return the maximum of them.
+</details>
+
+<details><summary>Optimal</summary>
+
+
+##### TC: (N^2)
+##### SC: O(1)
+
+1. We can also do this problem using only two for loop, starting the function with ( max_sum ) variable which will have the final answer. We can get the sum of all possible subarrays in this way and then return the maximum so far.
+</details>
+
+
+<details><summary>Most Optimal</summary>
+
+##### TC: O(N)
+##### SC: O(1)
+ 1. maximum = arr[0] and sum = 0
+ 2. Traverse the array, if sum < 0: sum = 0
+ 3. sum += arr[i]
+ 4. maximum = max(sum,maximum)
+ 5. return maximum
+
+</details>
