@@ -103,3 +103,54 @@
  5. return maximum
 
 </details>
+
+### [5.75_sort_colors](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_1_Array_Matrix/5.75_sort_colors.py)
+###### Leetcode Link: https://leetcode.com/problems/sort-colors/
+<details><summary>Brute Force</summary>
+
+
+##### TC: (N log N)
+##### SC: O(1)
+
+1.  Sorting ( even if it is not the expected solution here but it can be considered as one of the approach ). Since the array contains only 3 integers, 0, 1, and 2. Simply sorting the array would arrange the elements in increasing order.
+</details>
+
+<details><summary>Optimal</summary>
+
+
+##### TC: O(N) + O(N)
+##### SC: O(1)
+
+1. Take 3 variables to maintain the count of 0, 1 and 2.
+2. Travel the array once and increment the corresponding counting variables
+( let’s consider count_0 = a, count_1 = b, count_2 = c )
+3. In 2nd traversal of array, we will now over write the first ‘a’ indices / positions in array with ’0’, the next ‘b’ with ‘1’ and the remaining ‘c’ with ‘2’.
+</details>
+
+
+<details><summary>Most Optimal</summary>
+
+##### TC: O(N)
+##### SC: O(1)
+##### Dutch National flag algorithm (3-Pointer approach)
+ 1. Initialize the 3 pointers such that low and mid will point to 0th index and high pointer will point to last index
+    int low = arr[0]
+
+    int mid = arr[0]
+
+    int high = arr[n – 1]
+
+2. Now there will 3 different operations / steps based on the value of arr[mid] and will be repeated until mid <= high.
+
+    arr[mid] == 0:
+    swap(arr[low], arr[mid])
+    low++, mid++
+
+    arr[mid] == 1:
+    mid++
+
+    arr[mid] == 2:
+    swap(arr[mid], arr[high])
+    high–-
+
+</details>
