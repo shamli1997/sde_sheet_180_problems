@@ -42,3 +42,41 @@
  3. and if the current interval does not overlap with the last element in the data structure simply insert it into the data structure.
 
 </details>
+
+### [9.287_find_duplicate_num](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_2_Array_Matrix/9.287_find_duplicate_num.py)
+###### Leetcode Link: https://leetcode.com/problems/find-the-duplicate-number/
+<details><summary>Brute Force</summary>
+
+
+##### TC:   O(NlogN +N)  NlogN for sorting the array and O(N) for traversing through the array and checking if adjacent elements are equal or not. But this will distort the array.
+##### SC: O(1)
+
+1. Sort the array. After that, if there is any duplicate number they will be adjacent.So we simply have to check if arr[i]==arr[i+1] and if it is true,arr[i] is the duplicate number.
+</details>
+
+<details><summary>Most Optimal</summary>
+
+##### TC: O(N), as we are traversing through the array only once.
+
+##### SC: O(N), as we are using extra space for frequency array.
+ 1. Take a frequency array of size N+1 and initialize it to 0. Now traverse through the array and if the frequency of the element is 0 increase it by 1, else if the frequency is not 0 then that element is the required answer.
+
+</details>
+
+<details><summary>Optimized</summary>
+
+##### TC: O(N), Each element is visited at most twice (once in the first loop to find the duplicate and once in the second loop to restore the numbers).
+
+##### SC: O(1), All manipulation is done in place, so no additional storage (barring one variable) is needed.
+1.  Iterate over the array, evaluating each element (let's call the current element curcur).
+2. Since we use negative marking, we must ensure that the current element (curcur) is positive (i.e. if curcur is negative, then use its absolute value).
+
+3. Check if nums[cur]nums[cur] is negative.
+
+    1. If it is, then we have already performed this operation for the same number, and hence curcur is the duplicate number. Store curcur as the duplicate and exit the loop.
+
+    2. Otherwise, flip the sign of nums[cur]nums[cur] (i.e. make it negative). Move to the next element and repeat step 3.
+
+4. Once we've identified the duplicate, we could just return the duplicate number. However, even though we were not able to meet the problem constraints, we can show that we are mindful of the constraints by restoring the array. This is done by changing all negative numbers to positive.
+
+</details>
