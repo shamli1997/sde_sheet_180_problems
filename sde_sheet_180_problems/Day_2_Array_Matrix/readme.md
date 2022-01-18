@@ -80,3 +80,30 @@
 4. Once we've identified the duplicate, we could just return the duplicate number. However, even though we were not able to meet the problem constraints, we can show that we are mindful of the constraints by restoring the array. This is done by changing all negative numbers to positive.
 
 </details>
+
+### [10.repeat_and_missing_num](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_2_Array_Matrix/10.repeat_and_missing_num.py)
+###### Problem Link: https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/
+<details><summary>Brute Force</summary>
+
+
+##### TC: O(N) + O(N) (as we are traversing 2 times )
+##### SC: O(N) As we are making new substitute array
+
+1. Take a substitute array of size N+1 and initalize it with 0.
+2. Traverse the given array and increase the value of substitute[arr[i]] by one .
+3. Then again traverse the substitute array starting from index 1 to N.
+4. If you find any index value greater than 1 that is repeating element A.
+5. If you find any index value = 0 then that is the missing element B.
+</details>
+
+<details><summary>Most Optimal</summary>
+
+##### TC: O(N)
+
+##### SC: O(1)
+ 1. Iterate through array
+ 2. mark arr[abs(arr[i])-1] = -arr[abs(arr[i])-1]
+ 3. if arr element is already -ve then we have our repeating number
+ 4. Iterate through array and check which index is having +ve ele that index + 1 is our missing number
+
+</details>
