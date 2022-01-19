@@ -1,3 +1,5 @@
+# Day 3:Array and Matrix Problems
+
 ### [13.74_search_2d_matrix](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_3_Array_Matrix/13.74_search_2d_matrix.py)
 ###### Problem Link: https://leetcode.com/problems/search-a-2d-matrix/
 <details><summary>Brute Force</summary>

@@ -1,3 +1,5 @@
+# Day 2:Array and Matrix Problems
+
 ### [7.48_rotate_image](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_2_Array_Matrix/7.48_rotate_image.py)
 ###### Leetcode Link: https://leetcode.com/problems/rotate-image/
 <details><summary>Brute Force</summary>
