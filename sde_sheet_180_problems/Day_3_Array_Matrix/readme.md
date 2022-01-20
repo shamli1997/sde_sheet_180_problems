@@ -28,7 +28,7 @@
 
 </details>'
 
-### [14.50_pow_x_n](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_3_Array_Matrix/14.50_pow_x_n.py)
+### [14.50_pow_x_n](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_3_Array_Matrix/14.50_pow_x%2Cn.py)
 ###### Problem Link: https://leetcode.com/problems/powx-n/
 <details><summary>Brute Force</summary>
 
