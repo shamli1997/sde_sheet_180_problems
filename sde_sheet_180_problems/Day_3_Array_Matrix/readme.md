@@ -53,7 +53,7 @@
 
 </details>
 
-### [15_169_majority_element](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_3_Array_Matrix/15_169_majority_element.py)
+### [15_169_majority_element](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_3_Array_Matrix/15.169_majority_element.py)
 ###### Problem Link: https://leetcode.com/problems/majority-element/
 <details><summary>Brute Force</summary>
 
