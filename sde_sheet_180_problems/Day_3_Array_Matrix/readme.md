@@ -93,7 +93,7 @@ Element – for which element we are counting
 
 </details>
 
-### [16_229_majority_element_2](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_3_Array_Matrix/16_229_majority_element_2.py)
+### [16.229_majority_element_2](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_3_Array_Matrix/16.229_majority_element_2.py)
 ###### Problem Link: https://leetcode.com/problems/majority-element-ii/
 <details><summary>Brute Force</summary>
 
