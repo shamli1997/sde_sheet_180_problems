@@ -92,3 +92,39 @@ Element – for which element we are counting
 3. The integer present in Element is the result we are expecting 
 
 </details>
+
+### [16_229_majority_element_2](https://github.com/shamli1997/sde_sheet_180_problems/blob/main/sde_sheet_180_problems/Day_3_Array_Matrix/16_229_majority_element_2.py)
+###### Problem Link: https://leetcode.com/problems/majority-element-ii/
+<details><summary>Brute Force</summary>
+
+
+##### TC: O(N*N)
+##### SC: O(1)
+##### Algorithm
+1.  Simply count the no. of appearance for each element using nested loops and whenever you find the count of an element greater than N/3 times, that element will be your answer.
+</details>
+
+<details><summary>Most Optimal</summary>
+
+##### TC: O(N)
+
+##### SC: O(1)
+##### Algorithm
+Moore’s Voting Algorithm
+
+##### Intuition:
+1. num1 and num2 will store our currently most frequent and second most frequent element.
+2. c1 and c2 will store their frequency relatively to other numbers.
+3. We are sure that there will be a max of 2 elements which occurs > N/3 times because there cannot be if you do a simple math addition.
+Let, ele be the element present in the array at any index. 
+
+1. if ele == num1, so we increment c1.
+2. if ele == num2, so we increment c2.
+3. if c1 is 0, so we assign num1 = ele.
+4. if c2 is 0, so we assign num2 = ele.
+5. In all the other cases we decrease both c1 and c2.
+6. In the last step, we will run a loop to check if num1 or nums2 are the majority elements or not by running a for loop check.
+
+Intuition: Since it’s guaranteed that a number can be a majority element, hence it will always be present at the last block, hence, in turn, will be on nums1 and nums2.
+
+</details>
